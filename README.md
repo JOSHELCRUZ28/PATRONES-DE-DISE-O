@@ -1,12 +1,48 @@
-# Tema: Patrón de diseño Composite - aplicado a venta de máquinas armadas
+<p align="center"> <img width="1568" height="479" alt="image" src="https://github.com/user-attachments/assets/2add056a-8024-4dc1-84ea-ae6e9164c844" />
 
-### ALUMNO: LEON CRUZ JORGE JOSHEL 
+<p align="center"> TECNOLÓGICO NACIONAL DE MÉXICO </p>
+<p align="center"> INSTITUTO TECNOLÓGICO DE TIJUANA
+SUBDIRECCIÓN ACADÉMICA
+<br>
+    <br>
 
-### N.CONTROL: 22210772
-
-### PROFESOR/A: MARIBEL GUERRERO LUIS
-
-### Fecha: 18/03/2026
+<p align="center">DEPARTAMENTO DE SISTEMAS Y COMPUTACIÓN
+<br>
+    <br>
+<p align="center">SEMESTRE:
+ENERO-JUNIO 2026
+<br>
+    <br>
+<p align="center">CARRERA: </p>
+<p align="center">INGENIERÍA EN SISTEMAS COMPUTACIONALES 
+<br>
+    <br>
+<p align="center">MATERIA Y SERIE: </p>
+<p align="center">ANÁLISIS AVANZADO DE DESARROLLO DE SOFTWARE 
+<br>
+    <br>
+<p align="center">TÍTULO:
+<p align="center">Patrón de diseño Composite - aplicado a venta de máquinas armadas
+<br>
+    <br>
+<p align="center">UNIDAD A EVALUAR:
+<p align="center">3RA UNIDAD
+<br>
+    <br>
+<p align="center"> NOMBRES DE LOS ALUMNOS:
+<p align="center">LEON CRUZ JORGE JOSHEL 22210772
+<br>
+    <br>
+<p align="center">NOMBRE DEL MAESTRA:
+<p align="center">MARIBEL GUERRERO LUIS
+<br>
+    <br>
+<p align="center">FECHA:
+<p align="center">17 DE MARZO DEL 2026
+</p>
+<br>
+<br>
+<br>
 
 ---
 
@@ -28,7 +64,6 @@ namespace COMPOSITE
         {
 
             Componente computadora1 = new Directorio("COMPUTADORA LUJO");
-            // 🖥️ COMPUTADORA LUJO
             computadora1.AgregarHijo(new Archivo("Procesador", 12000, "Intel Core i9 13900K", "CPU"));
             computadora1.AgregarHijo(new Archivo("Tarjeta Grafica", 40000, "NVIDIA RTX 4090", "GPU"));
             computadora1.AgregarHijo(new Archivo("Placa Madre", 8000, "ASUS ROG Strix Z790-E", "Motherboard"));
@@ -40,7 +75,6 @@ namespace COMPOSITE
             computadora1.AgregarHijo(new Archivo("Ventilador Extra RGB", 1500, "Corsair iCUE SP120 RGB Elite", "Cooling"));
 
 
-            // 🖥️ COMPUTADORA REGULAR
             Componente computadora2 = new Directorio("COMPUTADORA REGULAR");
             computadora2.AgregarHijo(new Archivo("Procesador", 3000, "Intel Core i5 12400F", "CPU"));
             computadora2.AgregarHijo(new Archivo("Tarjeta Grafica", 7000, "NVIDIA RTX 3060", "GPU"));
@@ -53,7 +87,6 @@ namespace COMPOSITE
             computadora2.AgregarHijo(new Archivo("Ventilador Extra RGB", 500, "Cooler Master SickleFlow 120", "Cooling"));
 
 
-            // 🖥️ COMPUTADORA HUMILDE
             Componente computadora3 = new Directorio("COMPUTADORA HUMILDE");
             computadora3.AgregarHijo(new Archivo("Procesador", 2500, "AMD Ryzen 3 3200G", "CPU"));
             computadora3.AgregarHijo(new Archivo("Tarjeta Grafica", 0, "Gráficos integrados Radeon Vega", "GPU"));
@@ -162,18 +195,18 @@ namespace COMPOSITE
                 }
 
                 Console.WriteLine($"\n===============================");
-                Console.WriteLine($"🔧 COMPONENTE: {baseComp.Nombre}");
+                Console.WriteLine($"COMPONENTE: {baseComp.Nombre}");
                 Console.WriteLine("===============================");
 
                 // 🔹 OPCIÓN 1
-                Console.WriteLine("1️⃣ OPCIÓN 1:");
+                Console.WriteLine("OPCIÓN 1:");
                 Console.WriteLine($"   Tipo: {op1.Tipo}");
                 Console.WriteLine($"   Descripción: {op1.Descripcion}");
                 Console.WriteLine($"   Precio: ${op1.ObtenerTamaño}");
                 Console.WriteLine();
 
                 // 🔹 OPCIÓN 2
-                Console.WriteLine("2️⃣ OPCIÓN 2:");
+                Console.WriteLine("OPCIÓN 2:");
                 Console.WriteLine($"   Tipo: {op2.Tipo}");
                 Console.WriteLine($"   Descripción: {op2.Descripcion}");
                 Console.WriteLine($"   Precio: ${op2.ObtenerTamaño}");
